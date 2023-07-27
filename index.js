@@ -1,6 +1,13 @@
-const array = [1, 2, 3, 4, 5, 6];
-console.log(array);
-const index = array.indexOf(5);
-if (index > -1) {array.splice(index, 1);
+const input = ['red', 'green', 'blue'];
+
+removeElement(input, 3);
+
+console.log(input);
+
+function removeElement(array, item) {
+  const index = array.indexOf('green');
+
+  if (index > -1) {
+    array.splice(index, 1);
+  }  
 }
-console.log(array);
